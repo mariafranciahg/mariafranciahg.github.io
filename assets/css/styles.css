@@ -19,6 +19,10 @@ body {
   color: #3b1150;
 }
 
+ul {
+  list-style: none;
+}
+
 .text-morado {
   color: #3b1150;
 }
