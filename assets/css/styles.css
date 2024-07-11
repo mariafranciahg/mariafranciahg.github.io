@@ -19,6 +19,13 @@ body {
   color: #3b1150;
 }
 
+.text-morado {
+  color: #3b1150;
+}
+
+.text-gris {
+  color: #534e58;
+}
 
 .mukta-bold {
   font-family: "Mukta", sans-serif;
@@ -34,7 +41,7 @@ body {
   background-color: #fffbf7;
 }
 
-.text-morado {
+.text-azul {
   color: #cdf4ff;
 }
 
