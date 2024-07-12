@@ -1,28 +1,59 @@
-.bg-purple {
-    background-color: #290756;
-}
 
-#hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(144, 59, 177, 0.5)), url(../img/bghero.png);
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Mukta", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #3b1150;
+  color: #380460; 
 }
+
+h1 {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.2rem solid #FFF;
+    animation: 
+        typing 2.56s steps(18) 0.6s forwards,
+        blink 0.5s infinite step-end alternate;
+    text-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, 0.8);
+      
+           
+}
+  
+  h2 {
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #5D1C7E;
+    text-shadow: 1.5px 1.5px 4px rgba(109, 98, 118, 0.5);
+
+  }
 
 ul {
   list-style: none;
 }
+
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(144, 59, 177, 0.5)), url(../img/bghero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.bg-purple {
+  background-color: #380460
+  
+}
+
+.bg-plight {
+  background-color: #ECDFF8;
+}
+
 
 .text-morado {
   color: #3b1150;
@@ -32,6 +63,11 @@ ul {
   color: #534e58;
 }
 
+.text-azul {
+  color: #cdf4ff;
+  text-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, 0.7);
+}
+
 .mukta-bold {
   font-family: "Mukta", sans-serif;
   font-weight: 700;
@@ -39,49 +75,109 @@ ul {
 }
 
 
-.bg-plight {
-    background-color: #ECDFF8;
-  }
-.bg-claro {
-  background-color: #fffbf7;
-}
-
-.text-azul {
-  color: #cdf4ff;
-}
-
-h2 {
-  font-family: "Mukta", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-h1 {
-    color: #ecdff8;
-    width: 0ch;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.2rem solid #FFF;
-    animation: 
-        typing 2.56s steps(18) 0.6s forwards,
-        blink 0.5s infinite step-end alternate;
-        
-}
-
+ /******** Animación del Header ********/
 @keyframes typing {
-    from {
-      width: 0ch;
-      
-    }
-    to {
-      width: 18ch;
-    }
+  from {
+    width: 0ch;
     
   }
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
+  to {
+    width: 18ch;
   }
   
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/******** ****************** ********/
+
+
+/******** Botones portafolio ********/
+a {
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.menu li {
  
+}
+
+.menu a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 4ch;
+}
+
+.menu a span {
+  transition: transform 0.2s ease-out;
+}
+
+.menu a span:first-child {
+  display: inline-block;
+  padding: 10px;
+  text-shadow: 1.5px 1.5px 5px #6666667b;
+  
+}
+
+.menu a span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  background-color: #3b1150d1;
+  color: white;
+  border-radius: 10px;
+  border-color: #3b1150d1;
+  border-style: inset;
+  color: #3b1150d1;
+ }
+
+
+.menu a:hover span:first-child {
+  transform: translateY(100%);
+}
+
+.menu a:hover span:last-child,
+.menu[data-animation] a:hover span:last-child {
+  transform: none;
+}
+/******** ****************** ********/
+
+
+/******** Botones contacto ********/
+
+a img:hover {
+  transform:scale(1.3);
+  border-radius: 50%;
+  filter: saturate(200%) blur(0.2px);
+}
+
+/******** ****************** ********/
+
+footer img{
+  filter:contrast(0%);
+  filter:brightness(35%);
+  width: 70px;
+  padding: 0;
+  margin: 0;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+  
+}
