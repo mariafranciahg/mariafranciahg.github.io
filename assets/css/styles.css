@@ -36,6 +36,9 @@ h1 {
 ul {
   list-style: none;
 }
+object {
+  block-size: 2.5rem;
+}
 
 #hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(144, 59, 177, 0.5)), url(../img/bghero.png);
@@ -63,6 +66,9 @@ ul {
   color: #534e58;
 }
 
+.fs-medio {
+  font-size: 1.1rem;
+}
 .text-azul {
   color: #cdf4ff;
   text-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, 0.7);
